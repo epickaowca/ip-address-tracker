@@ -2,5 +2,5 @@
   margin: 0px;
   padding: 0px;
   font-family: 'Rubik', sans-serif;
+  box-sizing: border-box;
 }
-/* html { margin-left: calc(100vw - 100%); } */

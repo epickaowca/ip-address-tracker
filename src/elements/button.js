@@ -10,6 +10,7 @@ width: 45px;
 height: 45px;
 border-top-right-radius: 10px;
 border-bottom-right-radius: 10px;
+cursor: pointer;
 & > div{
     width: 100%;
     height: 100%;
@@ -17,11 +18,14 @@ border-bottom-right-radius: 10px;
     background-position: center;
     background-repeat: no-repeat;
 }
+&:hover{
+    background: ${p=>p.theme.color1};
+}
 `
 
 export default function button({clickFunc}) {
     return (
-        <ButtonElem arrow={arrow}>
+        <ButtonElem onClick={clickFunc} arrow={arrow}>
             <div></div>
         </ButtonElem>
     )
